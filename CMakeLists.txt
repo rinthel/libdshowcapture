@@ -103,3 +103,8 @@ target_link_libraries(libdshowcapture
 	strmiids
 	ksuser
 	wmcodecdspuuid)
+
+install( TARGETS libdshowcapture
+	RUNTIME DESTINATION ${CMAKE_INSTALL_PREFIX}/bin
+	ARCHIVE DESTINATION ${CMAKE_INSTALL_PREFIX}/lib)
+install( FILES dshowcapture.hpp DESTINATION ${CMAKE_INSTALL_PREFIX}/include )
